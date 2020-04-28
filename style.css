@@ -26,7 +26,7 @@ h1 {
 .osoba {
   display: flex;
   flex-direction: column;
-
+  padding-top: 10px;
   border: 1px solid rgb(236, 236, 236);
   margin: 20px;
   box-sizing: border-box;
@@ -35,7 +35,7 @@ h1 {
 /*flex grow jeste overit * nutn0 pridat velikost boxu*/
 .popis {
   text-align: center;
-  padding: 25px;
+  margin: 20px;
 }
 
 img {
@@ -53,6 +53,11 @@ img {
   .osoba {
     width: 100%;
     align-items: center;
+    padding: 25px;
+  }
+  .popis {
+    overflow: auto;
+    padding: 20px;
   }
 }
 
@@ -65,14 +70,16 @@ img {
     width: 40%;
     flex-direction: row;
     display: flex;
+    flex-shrink: 1;
   }
   img {
     overflow: auto;
     padding: 10px;
+    width: 120px;
   }
   .popis {
     overflow: auto;
-    padding: 10px;
+    padding: 0px;
   }
 }
 @media screen and (min-width: 690px) {
@@ -85,6 +92,6 @@ img {
   }
   .popis {
     overflow: auto;
-    padding: 10px;
+    padding: 20px;
   }
 }

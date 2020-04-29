@@ -71,6 +71,7 @@ img {
     flex-direction: row;
     display: flex;
     flex-shrink: 1;
+    flex-grow: 1;
   }
   img {
     overflow: auto;
@@ -80,6 +81,7 @@ img {
   .popis {
     overflow: auto;
     padding: 0px;
+    text-align: justify;
   }
 }
 @media screen and (min-width: 690px) {

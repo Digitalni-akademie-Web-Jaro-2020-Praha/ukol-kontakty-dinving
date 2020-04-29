@@ -34,7 +34,7 @@ h1 {
   flex-grow: 1;
   justify-content: center;
 }
-/*flex grow jeste overit * nutn0 pridat velikost boxu*/
+/*flex grow jeste overit * mozna pridat velikost boxu*/
 .popis {
   text-align: center;
   margin: 20px;
@@ -63,7 +63,7 @@ img {
   }
 }
 
-@media screen and (min-width: 540px) and (max-width: 690px) {
+@media screen and (min-width: 540px) and (max-width: 960px) {
   .tym {
     flex-wrap: wrap;
     flex-direction: row;
@@ -74,6 +74,8 @@ img {
     display: flex;
     align-items: flex-start;
     flex-grow: 1;
+    max-height: 300px;
+    overflow: auto;
   }
   img {
     overflow: auto;
@@ -86,7 +88,7 @@ img {
     text-align: justify;
   }
 }
-@media screen and (min-width: 690px) {
+@media screen and (min-width: 960px) {
   .tym {
     justify-content: center;
   }
